@@ -1,0 +1,13 @@
+{
+  "name": "music_rec",
+  "version": "1.0.0",
+  "description": "Recommending music based on your facial expressions using FER 2013 dataset and Sporify api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "keywords": []
+}
