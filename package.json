@@ -9,5 +9,8 @@
   "author": "",
   "license": "ISC",
   "type": "module",
-  "keywords": []
+  "keywords": [],
+  "dependencies": {
+    "cors": "^2.8.5"
+  }
 }

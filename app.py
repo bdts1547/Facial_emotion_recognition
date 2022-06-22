@@ -1,6 +1,7 @@
 from flask import Flask, render_template, Response, jsonify
 import gunicorn
 from camera import *
+import flask
 
 app = Flask(__name__)
 
@@ -25,9 +26,15 @@ def video_feed():
     return Response(gen(VideoCamera()),
                     mimetype='multipart/x-mixed-replace; boundary=frame')
 
-@app.route('/t')
+@app.route('/t', methods=['GET'])
 def gen_table():
     return df1.to_json(orient='records')
+
+@app.route('/listmusic', methods=['GET'])
+def gen_music():
+    response = flask.jsonify(df1.to_json(orient='records'))
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
 
 if __name__ == '__main__':
     app.debug = True

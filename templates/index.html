@@ -108,17 +108,15 @@
 <script type="text/javascript">
   
 // Constantly Update Table
+    var database
     setInterval(function() {
         $.getJSON('/t', function(data) {
             CreateHtmlTable(data);
-            for (obj of data) {
-              document.cookie += obj.Name + ','
-            }
-            console.log(document.cookie)
-            
+            // console.log(data)
           });
         return false;
-    }, 3000);
+    }, 100);
+
 
     function CreateHtmlTable(data) {
       //Clear result div
@@ -147,7 +145,7 @@
 
     const btn = document.querySelector('.btn');
     btn.onclick = function() {
-      window.open('../Music_player/index.html');
+      window.open('http://127.0.0.1:5500/Music_player/index.html');
     }
 
 </script>
