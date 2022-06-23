@@ -1,7 +1,9 @@
 # Emotion Music Recommendation & Play Music
 
-# Run:
-  Require: open localhost file Music_player/index.html
+## Run:
+  - Require: Vscode extention "live server"
+  
+  Run file Music_player/index.html with live server. After run code below:
 ``` 
 python app.py
 
