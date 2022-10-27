@@ -1,4 +1,4 @@
-# Emotion Music base on Facial & Play Music
+# Facial emotion recognition
 
 ## Run:
   - Require: Vscode extention "live server"
